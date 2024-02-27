@@ -1,161 +1,88 @@
-
-html {
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-}
- 
-* {
-  margin: 0;
-  padding: 0;
-font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
- 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
- 
-/* navigatie */
- 
-header{
-  position: sticky;
-  top: 0;
-  background-color:rgba(201, 154, 34, 0.799) ;
-}
- 
-.navContainer {
-  background-color: rgba(201, 154, 34, 0.663);
-  color: grey;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 80px;
-  font-size: 20px;
- 
-}
- 
-.nav {
- 
+.container {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-auto-rows: minmax(150px, auto);
+grid-template-areas: 
+"hd"
+"mn"
+"ft";
 }
 
- 
-.contact,
-.overOns,
-a
-  {
-  font-size: 30px;
-  font-weight: 550;
-  height: 38px;
-  width: 150px;
-  text-align: center;
-  color: white;
-  background-color: rgba rgb(218, 24, 24);
-  text-decoration-line: none;
+.header{
+  grid-area: hd;
+  height: 150px;
 }
- 
-.contact:hover,
-.overOns:hover,
-  .shop1:hover,
-  .shop2:hover,
-  .shop3:hover
-{
-  color:  rgb(228, 201, 48);
-  background-color: rgba rgb(234, 3, 3);
-  border-radius: 15px;
-  cursor: pointer;
- 
-}
- 
- 
-.home{
-  color: white;
-  font-size: 100px;
- font-weight: 550;
- }
- 
-.over-ons{
-  font-size: 80px;
- font-weight: 550;
-}
- 
-section{
-  height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- scroll-snap-align: start;
-}
- 
-.first{
-  background-color:  rgb(2, 2, 2);
-}
- 
-.second{
-  background-color:  rgb(128, 128, 128);
-}
- 
- 
-.main {
+
+.main{
+  grid-area: mn;
   height: 665px;
 }
- 
-.footer {
-  background-color:  rgb(128, 128, 128);
+
+.footer{
   grid-area: ft;
+  height: 138px;
 }
- 
-/* home */
- 
- 
- 
- 
- 
- 
-/* overons */
- 
- 
- 
- 
-/* contact */
- 
-.third{
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(62, 61, 61);
-  border: color solid #c49e13;
-  padding: 0;
-  }
- 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 2px solid #c49e13; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+body {
+  background: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
- 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #c49e13;
+
+.Homepage {
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
 }
 
-input[type=submit]:hover {
-  background-color: white;
-  color: #c49e13;
+.nav-bar{
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-auto-flow: column;
 }
- 
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+
+@media only  screen and (min-width:768px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas: 
+    "hd hd"
+    "mn rsb"
+    "ft ft";
+    background-image: url(/img/FjdtLxZXEAAiAvW.jpg);
+    }
+
+  .nav-bar{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-auto-flow: column;
+    background-color: red;
+  }
 }
- 
- 
- 
- 
+
+@media only  screen and (min-width:1280px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas: 
+    "hd hd hd hd hd"
+    "lsb mn mn mn rsb"
+    "ft ft ft ft ft";
+    background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
+    }
+
+  .nav-bar{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-auto-flow: column;
+    background-color: red;
+  }
+}
+
