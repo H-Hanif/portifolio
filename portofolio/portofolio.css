@@ -1,10 +1,16 @@
 body{
     margin:0;
     padding:0;
-    background:#f2f2f2;
+    background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
     font-family: 'Acme';
   }
   
+  .back{
+    margin-top: -700px;
+    width: 100px;
+  }
+
+
   .container{
     max-width:1000px;
     margin:100px auto;
