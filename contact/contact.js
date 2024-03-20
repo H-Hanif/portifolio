@@ -2,6 +2,7 @@ const back = document.querySelector(".back")
 const profile = document.querySelector(".profile")
 const portofolio = document.querySelector(".Portofolio")
 const career = document.querySelector(".career")
+const submit = document.querySelector(".submit")
 
 
 back.addEventListener("click", () => {
@@ -20,4 +21,8 @@ portofolio.addEventListener("click", () => {
 
 career.addEventListener("click", () => {
     window.location.href = "/career/career.html";
+});
+
+submit.addEventListener("click", () => {
+    window.location.href = "/index.html";
 });
