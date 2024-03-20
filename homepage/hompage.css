@@ -1,3 +1,15 @@
+*{
+  margin: 0;
+}
+
+body {
+  background: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
 .container {
 display: grid;
 grid-template-columns: repeat(1, 1fr);
@@ -13,18 +25,32 @@ grid-template-areas:
   height: 150px;
 }
 
-.main{
+button{
+    background-color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    gap: 40px;
+}
+
+
+ main{
   grid-area: mn;
   height: 665px;
+  background-color: black;
 }
 
 .footer{
   grid-area: ft;
   height: 138px;
+  background-color: black;
 }
 
 body {
-  background: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -45,6 +71,8 @@ body {
 }
 
 
+
+
 @media only  screen and (min-width:768px){
   .container {
     display: grid;
@@ -54,7 +82,6 @@ body {
     "hd hd"
     "mn rsb"
     "ft ft";
-    background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
     }
 
   .nav-bar{
@@ -74,7 +101,6 @@ body {
     "hd hd hd hd hd"
     "lsb mn mn mn rsb"
     "ft ft ft ft ft";
-    background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
     }
 
   .nav-bar{

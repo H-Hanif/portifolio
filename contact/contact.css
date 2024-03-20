@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
+    font-family: 'Acme';
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .bar{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 900px;
+    font-size: larger;
+    
+  }
+
+fieldset{
+    border-radius: 10px;
+    border: 3px solid white;
+    color: white;
+}
+
+  
+button{
+    background-color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    gap: 40px;
+}
+
+
+
+
+.Homepage {
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+  }
+  
+  .nav-bar{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-auto-flow: column;
+  }
+
+input:hover,
+textarea:hover{
+background-color: white;
+border-color: white;
+border: 3px solid white;
+border-radius: 10px;
+}
+
+body{
+    background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
+}
