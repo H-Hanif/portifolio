@@ -73,3 +73,12 @@
     padding: 2px 16px;
     background-color: beige;
   }
+
+  video {
+    width: 30%;
+    height: 70vh;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: 1000px;
+    margin-top: -200px;
+  }

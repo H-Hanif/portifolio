@@ -62,3 +62,10 @@ border-radius: 10px;
 body{
     background-image: url(/img/blue_black_lines_shades_dark_background_hd_black-1920x1080.jpg);
 }
+
+a{
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 10px;
+}
