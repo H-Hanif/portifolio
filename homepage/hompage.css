@@ -41,13 +41,11 @@ button{
  main{
   grid-area: mn;
   height: 665px;
-  background-color: black;
 }
 
 .footer{
   grid-area: ft;
   height: 138px;
-  background-color: black;
 }
 
 body {
