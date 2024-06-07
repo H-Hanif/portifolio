@@ -2,42 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/contact/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact of Hasnain Ali Hanif</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/contact/contact.css"> 
 </head>
 
 <body>
-    <header>
-        <h1 class="Homepage">Contact Of Hasnain Ali Hanif</h1>
-        <div class="nav-bar">
-            <button class="back">Homepage</button>
-            <button class="profile">Profile</button>
-            <button class="Portofolio">Portofolio</button>
-            <button class="career">Career</button>
-        </div>
+  <div class="container d-flex">
+  <div class="container">
+    <header class="text-center my-4">
+      <h1 class="text-white">Contact Of Hasnain Ali Hanif</h1>
+      <div class="nav-bar d-flex justify-content-center my-3">
+        <button class="btn btn-primary mx-2 back">Homepage</button>
+        <button class="btn btn-primary mx-2 profile">Profile</button>
+        <button class="btn btn-primary mx-2 portfolio">Portfolio</button>
+        <button class="btn btn-primary mx-2 career">Career</button>
+      </div>
     </header>
     <main>
-        <form action="/bedankt.html" method="get">
-            <fieldset>
-                <legend>
-                    Contactgegevens
-                </legend>
-                <label for="name">Uw Naam:</label>
-                <input type="text" name="name" id="" placeholder="Uw Naam hier:" required> <br>
-                <label for="email">Uw Emailadres:</label>
-                <input type="email" name="email" id="" placeholder="Uw email hier:" required> <br>
-                <label for="text">Uw Vraag:</label>
-                <input type="submit">
-                <textarea name="text" id="" cols="30" rows="10"></textarea> <br>
-
-                <br>
-            </fieldset>
-        </form>
+      
+      <form action="/bedankt.html" method="get">
+        <fieldset class="border p-4 rounded">
+          <legend class="w-auto px-2 text-white">Contactgegevens</legend>
+          <div class="mb-3">
+            <label for="name" class="form-label text-white">Uw Naam:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Uw Naam hier:" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white">Uw Emailadres:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Uw email hier:" required>
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label text-white">Uw Vraag:</label>
+            <textarea name="text" id="text" class="form-control" rows="5" placeholder="Uw vraag hier:"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Verstuur</button>
+        </fieldset>
+      </form>
     </main>
-    <footer></footer>
-    <script src="/contact/contact.js"></script>
+    <footer class="text-center my-4">
+      <!-- Footer content goes here -->
+    </footer>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/contact/contact.js"></script>
 </body>
 
 </html>
